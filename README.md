@@ -1,7 +1,7 @@
 # Trabalho_Embarcados
 <p align="center">
 Repositório do projeto de Sistemas embarcados - Primeiro semestre de 2021. <br/>
-<br> Projeto 5: IHM para braço robótico de reabilitação. </br>
+<b> Projeto 5: IHM para braço robótico de reabilitação. </b>
 
 <p align="left">
 <br/>
