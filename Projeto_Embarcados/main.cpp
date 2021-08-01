@@ -1,8 +1,7 @@
 #include "mainwindow.h"
-#include <QtCore/QCoreApplication>
-#include <QDebug>
+
 #include <QApplication>
-//#include "server.h"
+#include "server.h"
 
 int main(int argc, char *argv[])
 {
@@ -15,3 +14,16 @@ int main(int argc, char *argv[])
     return a.exec();
 
 }
+
+/* #include "mainwindow.h"
+#include <QApplication>
+#include "server.h"
+
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.show();
+    return a.exec();
+}
+*/

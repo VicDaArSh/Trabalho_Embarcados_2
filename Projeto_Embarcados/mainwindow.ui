@@ -101,7 +101,8 @@ background-repeat: none;
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">#textBrowser{background-color: transparent;}</string>
+     <string notr="true">#textBrowser{background-color: transparent;
+text-color: white;}</string>
     </property>
     <property name="html">
      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
@@ -115,7 +116,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>360</x>
-      <y>280</y>
+      <y>310</y>
       <width>101</width>
       <height>41</height>
      </rect>
@@ -125,10 +126,49 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>360</x>
-      <y>340</y>
+      <y>410</y>
       <width>101</width>
       <height>41</height>
      </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Start">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>90</y>
+      <width>141</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Start Server!</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>290</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Posição Atual</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>390</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Velocidade</string>
     </property>
    </widget>
   </widget>

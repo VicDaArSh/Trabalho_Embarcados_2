@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/Images">
+        <file>Images/Seta_AH.png</file>
+        <file>Images/Seta_H.png</file>
+        <file>Images/Braco_pos_1.png</file>
+        <file>Images/Braco_pos_2.png</file>
+        <file>Images/Braco_pos_3.png</file>
+    </qresource>
+</RCC>
