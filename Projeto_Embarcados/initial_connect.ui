@@ -38,7 +38,7 @@
     <property name="geometry">
      <rect>
       <x>60</x>
-      <y>330</y>
+      <y>310</y>
       <width>311</width>
       <height>31</height>
      </rect>
@@ -74,13 +74,26 @@
     <property name="geometry">
      <rect>
       <x>60</x>
-      <y>300</y>
+      <y>290</y>
       <width>311</width>
       <height>16</height>
      </rect>
     </property>
     <property name="text">
      <string>Insira a porta para o recebimento de mensagens:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="connect_button">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>360</y>
+      <width>181</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Connect!</string>
     </property>
    </widget>
   </widget>
