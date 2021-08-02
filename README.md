@@ -12,7 +12,7 @@ Lucas Ryu Shoji Nakamura - 10308926
 Victor Daisuke Araki - 10309041
 <br/>
   
-  INFORMAÇÕES ADCIONAIS
+  INFORMAÇÕES ADCIONAIS <br/>
     1) Para compilar os códigos é necessário a instalação de todas as bibliotecas: <br/>
       stdio.h (Client.c) <br/>
       stdlib.h (Client.c) <br/>
