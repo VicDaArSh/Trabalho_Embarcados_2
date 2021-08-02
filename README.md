@@ -40,7 +40,7 @@ Victor Daisuke Araki - 10309041
   
   2.3 Servidor;   <br/>
   
-  2.4 Total;
+  2.4 Total;   <br/>
   
   
 <h1> 3. COMUNICAÇÃO CAN </h1>  <br/>
