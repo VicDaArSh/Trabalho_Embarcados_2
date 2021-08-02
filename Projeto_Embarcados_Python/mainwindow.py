@@ -15,6 +15,76 @@ import sys
 import socket as SOCKET
 from threading import Thread
 
+class SetupWindow(QtWidgets.QMainWindow):
+
+        def __init__(self):
+                super().__init__()
+                self.IP_hostValue = '192.168.137.1'
+                self.PortSendValue = '23'
+                self.PortRecvValue = '1234'
+
+                self.setupUi(self)
+
+        def setupUi(self, MainWindow):
+                MainWindow.setObjectName("MainWindow")
+                MainWindow.resize(550, 550)
+                self.centralwidget = QtWidgets.QWidget(MainWindow)
+                self.centralwidget.setObjectName("centralwidget")
+                self.Input_IP = QtWidgets.QPlainTextEdit(self.centralwidget)
+                self.Input_IP.setGeometry(QtCore.QRect(60, 120, 311, 31))
+                self.Input_IP.setObjectName("Input_IP")
+                self.PortSend = QtWidgets.QPlainTextEdit(self.centralwidget)
+                self.PortSend.setGeometry(QtCore.QRect(60, 240, 311, 31))
+                self.PortSend.setObjectName("PortSend")
+                self.PortReceive = QtWidgets.QPlainTextEdit(self.centralwidget)
+                self.PortReceive.setGeometry(QtCore.QRect(60, 310, 311, 31))
+                self.PortReceive.setObjectName("PortReceive")
+                self.label = QtWidgets.QLabel(self.centralwidget)
+                self.label.setGeometry(QtCore.QRect(60, 100, 71, 16))
+                self.label.setObjectName("label")
+                self.label_2 = QtWidgets.QLabel(self.centralwidget)
+                self.label_2.setGeometry(QtCore.QRect(60, 220, 241, 16))
+                self.label_2.setObjectName("label_2")
+                self.label_3 = QtWidgets.QLabel(self.centralwidget)
+                self.label_3.setGeometry(QtCore.QRect(60, 290, 311, 16))
+                self.label_3.setObjectName("label_3")
+                self.connect_button = QtWidgets.QPushButton(self.centralwidget)
+                self.connect_button.setGeometry(QtCore.QRect(190, 360, 181, 25))
+                self.connect_button.setObjectName("connect_button")
+                MainWindow.setCentralWidget(self.centralwidget)
+                self.menubar = QtWidgets.QMenuBar(MainWindow)
+                self.menubar.setGeometry(QtCore.QRect(0, 0, 550, 25))
+                self.menubar.setObjectName("menubar")
+                MainWindow.setMenuBar(self.menubar)
+                self.statusbar = QtWidgets.QStatusBar(MainWindow)
+                self.statusbar.setObjectName("statusbar")
+                MainWindow.setStatusBar(self.statusbar)
+
+                #Modificado
+                MainWindow.setStyleSheet("background-image:url(./icons/interface_0.png)")
+                self.connect_button.clicked.connect(self.startServer)  # runs the method
+                self.Input_IP.setPlainText(self.IP_hostValue)
+                self.PortSend.setPlainText(self.PortSendValue)
+                self.PortReceive.setPlainText(self.PortRecvValue)
+
+                self.retranslateUi(MainWindow)
+                QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+        def retranslateUi(self, MainWindow):
+                _translate = QtCore.QCoreApplication.translate
+                MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+                self.label.setText(_translate("MainWindow", "Insira o IP:"))
+                self.label_2.setText(_translate("MainWindow", "Insira a porta para envio de mensagens:"))
+                self.label_3.setText(_translate("MainWindow", "Insira a porta para o recebimento de mensagens:"))
+                self.connect_button.setText(_translate("MainWindow", "Connect!"))
+
+        def startServer(self):
+                input_IP = self.Input_IP.toPlainText().strip()
+                portSend = self.PortSend.toPlainText().strip()
+                portReceive = self.PortReceive.toPlainText().strip()
+                self.main_window = Ui_MainWindow(input_IP, int(portSend), int(portReceive))
+
+
 class Ui_MainWindow(QtWidgets.QMainWindow):
         def __init__(self, ip_host: str, portSend: int, portRecv: int):
                 self.ip_host = ip_host
@@ -71,15 +141,21 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
                 self.spin.setSingleStep(30)
                 self.spin.setObjectName("spin")
                 self.textBrowser = QtWidgets.QTextBrowser(self.centralwidget)
-                self.textBrowser.setGeometry(QtCore.QRect(20, 20, 511, 111))
+                self.textBrowser.setGeometry(QtCore.QRect(20, 20, 511, 50))
                 self.textBrowser.setStyleSheet("#textBrowser{background-color: transparent;}")
                 self.textBrowser.setObjectName("textBrowser")
                 self.LCD1 = QtWidgets.QLCDNumber(self.centralwidget)
-                self.LCD1.setGeometry(QtCore.QRect(360, 280, 101, 41))
+                self.LCD1.setGeometry(QtCore.QRect(360, 310, 101, 41))
                 self.LCD1.setObjectName("LCD1")
                 self.LCD2 = QtWidgets.QLCDNumber(self.centralwidget)
-                self.LCD2.setGeometry(QtCore.QRect(360, 340, 101, 41))
+                self.LCD2.setGeometry(QtCore.QRect(360, 410, 101, 41))
                 self.LCD2.setObjectName("LCD2")
+                self.label = QtWidgets.QLabel(self.centralwidget)
+                self.label.setGeometry(QtCore.QRect(370, 290, 91, 16))
+                self.label.setObjectName("label")
+                self.label_2 = QtWidgets.QLabel(self.centralwidget)
+                self.label_2.setGeometry(QtCore.QRect(380, 390, 71, 16))
+                self.label_2.setObjectName("label_2")
                 MainWindow.setCentralWidget(self.centralwidget)
                 self.menubar = QtWidgets.QMenuBar(MainWindow)
                 self.menubar.setGeometry(QtCore.QRect(0, 0, 550, 25))
@@ -102,6 +178,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
                 self.retranslateUi(MainWindow)
 
                 QtCore.QMetaObject.connectSlotsByName(MainWindow)
+                self.show()
 
 
 
@@ -113,6 +190,8 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
                 "p, li { white-space: pre-wrap; }\n"
                 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
                 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt; font-weight:600; color:#ffffff;\">Selecione o deslocamento, e clique na seta para enviar.</span></p></body></html>"))
+                self.label.setText(_translate("MainWindow", "Posição Atual"))
+                self.label_2.setText(_translate("MainWindow", "Velocidade"))
                 self.menuControle_de_Motores.setTitle(_translate("MainWindow", "Controle de Motores"))
         
         def left_btn_click(self):
@@ -166,7 +245,7 @@ class RecevServer(QtCore.QObject):
                 self.RecvServPort = Server_Functions(self.ip_host,self.portRecv)
                 while self.flag:
                         try:
-                                msg = self.RecvServPort.recv_message().split(' ') #Cria uma array com as mensagens
+                                msg = self.RecvServPort.recv_message().split('-') #Cria uma array com as mensagens
                                 #print(msg)
                                 if msg[0] == 'P':
                                         #print('Dentro do P')
@@ -211,7 +290,6 @@ class Server_Functions():
 
 if __name__ == '__main__':
         app = QtWidgets.QApplication(sys.argv)
-        #main_window = SettingWindow()
-        main_window = Ui_MainWindow('127.0.0.1', 23, 1234)
+        main_window = SetupWindow()
         main_window.show()
         sys.exit(app.exec_())
