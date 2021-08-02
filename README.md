@@ -43,49 +43,52 @@ Victor Daisuke Araki - 10309041
 
 <h1> 3. SIMULAÇÕES </h1> 
   <p> 3.1 Servidor;
+  
+  </p>
   <figure>
       <p align="center"><img src="Imagens/teste_servidor_interface_inicial.jpeg"
         height="300"
-        <figcaption> <p align="center"> Figura 3.1 - Print da Interface do Servidor (menu principal de definição) </figcaption>
-    </figure>
+        <figcaption> <p align="center"> Figura 3.1 - Interface do Servidor (menu principal de definição) </figcaption>
+  </figure>
+  <p>
     
-    <p> Esse menu serve para definir as conexões, como: o IP da máquina que será o host, a porta dentro da qual será usada para o envio de mensagem e aquela para recebimento de mensagens. Dessa forma o codigo pode ser usado em diferentes máquinas.
+  <p> Esse menu serve para definir as conexões, como: o IP da máquina que será o host, a porta dentro da qual será usada para o envio de mensagem e aquela para recebimento de mensagens. Dessa forma o codigo pode ser usado em diferentes máquinas. </p>
    
   <figure>
       <p align="center"><img src="Imagens/teste_servidor_interface_posterior.jpeg"
         height="300"
-        <figcaption> <p align="center"> Figura 3.2 - Print da Interface do Servidor (monitorando mensagens) </figcaption>
-    </figure>
+        <figcaption> <p align="center"> Figura 3.2 - Interface do Servidor (monitorando mensagens) </figcaption>
+  </figure>
     
-    Esse visor apresenta o menu de usuário para envio das mensagens do robô.
+  <p> Esse visor apresenta o menu de usuário para envio das mensagens do robô. </p>
 
   <p> 3.2 Cliente; <br/>
-      O cliente foi escrito em linguagem C com o intuito de permitir a inclusão do código já compilado na placa. Os testes primários foram feitos nos computadores pessoais com portas locais.
+      O cliente foi escrito em linguagem C com o intuito de permitir a inclusão do código já compilado na placa. Os testes primários foram feitos nos computadores pessoais com portas locais. </p>
   
-    <figure>
-      <p align="center"><img src="Imagens/teste_cliente.png"
+  <figure>
+      <p align="center"><img src="Imagens/teste_cliente.jpeg"
         height="300"
-      <figcaption> <p align="center"> Figura 3.3 - Print do prompt recebendo e enviando mensagem no Windows </figcaption>
-      </figure>
+        <figcaption> <p align="center"> Figura 3.3 - Prompt do CLIENTE em Windows </figcaption>
+  </figure>
 
   <p> 3.3 Em sistema embarcado (VIOLA);  <br/>
-      A tranferência dos códigos se deram fazendo uso dos passos expostos na "aula 04: roteiro_lab_MK". Iniciamente testou-se a conexão com placa, transferindo o código modelo de CLIENTE, a fim de anular erros provenientes do código escrito.
+      A tranferência dos códigos se deram fazendo uso dos passos expostos na "aula 04: roteiro_lab_MK". Iniciamente testou-se a conexão com placa, transferindo o código modelo de CLIENTE, a fim de anular erros provenientes do código escrito. </p>
 
-    <figure>
-      <p align="center"><img src="Imagens/embarcado_simples.png"
+  <figure>
+      <p align="center"><img src="Imagens/embarcado_simples.jpeg"
         height="300"
-      <figcaption> <p align="center"> Figura 3.4 - Resultado teste em sistema embarcado do código modelo </figcaption>
-      </figure>
+        <figcaption> <p align="center"> Figura 3.4 - Resultado do teste em sistema embarcado de código modelo </figcaption>
+  </figure>
+  
+  Para tal implementação, gravou-se o vídeo "TesteComThreadSimples.mp4", contido na pasta "Vídeos". Agora, tal transferência também se deu com nosso código de CLIENTE.
 
-      <p> Para tal implementação, geravou-se o vídeo "TesteComThreadSimples.mp4", contido na pasta "Vídeos". Agora, tal transferência também se deu com nosso código de CLIENTE.
-
-   <figure>
-      <p align="center"><img src="Imagens/teste_cliente.png"
+  <figure>
+      <p align="center"><img src="Imagens/embarcado_multithread.jpeg"
         height="300"
-      <figcaption> <p align="center"> Figura 3.5 - Resultado do teste em sistema embarcado de nosso código </figcaption>
-      </figure>
-      
-      <p> Para tal implementação, gravou-se o vídeo "MultiThread.mp4", contido na pasta "Vídeos".
+        <figcaption> <p align="center"> Figura 3.5 - Resultado do teste em sistema embarcado de nosso código Multithread </figcaption>
+  </figure>
+  
+  Para tal implementação, gravou-se o vídeo "MultiThread.mp4", contido na pasta "Vídeos".
 
 <h1> 4. COMUNICAÇÃO CAN </h1>  
   <p> 4.1 A transmissão CAN está fora do escopo do projeto;  
