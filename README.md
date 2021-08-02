@@ -105,19 +105,19 @@ Victor Daisuke Araki - 10309041
    <figure>
       <p align="center"><img src="Imagens/CAN_sinal.png"
         height="200"
-        <figcaption> <p align="center"> Figura 3.4 - Resultado do teste em sistema embarcado de código modelo </figcaption>
+        <figcaption> <p align="center"> Figura 5.1 - Resultado do teste em sistema embarcado de código modelo </figcaption>
   </figure>
     
   <p> 5.3 A mensagem padrão CAN possui 59 bits, com 11 bits de identificação iniciais, com os seguintes tipos: Data, Remote, Overload e Error Frames; 
    <figure>
       <p align="center"><img src="Imagens/CAN_tabela.jpg"
         height="50"
-        <figcaption> <p align="center"> Figura 5.5 - Tabela de bits de CANOpen <br> (Fonte: <a target="_blank" href="https://github.com/VicDaArSh/Trabalho_Embarcados_2/blob/48e2ddc9ad9711ae187e48e4f2c627283f0528d7/WEG-cfw11-manual-da-comunicacao-canopen.pdf"> WEG_CFW </a>)  </figcaption>
+        <figcaption> <p align="center"> Figura 5.2 - Tabela de bits de CANOpen <br> (Fonte: <a target="_blank" href="https://github.com/VicDaArSh/Trabalho_Embarcados_2/blob/48e2ddc9ad9711ae187e48e4f2c627283f0528d7/WEG-cfw11-manual-da-comunicacao-canopen.pdf"> WEG_CFW </a>)  </figcaption>
   </figure>
     
   <p> 5.4 A estrutura do barramento CAN é definida por dois resistores de acordo com:
   <figure>
       <p align="center"><img src="Imagens/CAN_estrutura.png"
         height="200"
-        <figcaption> <p align="center"> Figura 3.4 - Resultado do teste em sistema embarcado de código modelo </figcaption>
+        <figcaption> <p align="center"> Figura 5.3 - Resultado do teste em sistema embarcado de código modelo </figcaption>
   </figure>
