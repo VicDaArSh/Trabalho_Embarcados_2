@@ -15,7 +15,8 @@ Victor Daisuke Araki - 10309041
   
 
 <h1> 1. CONSIDERAÇÕES INICIAIS </h1> <br/>
-<pre> 1.1 Para compilar os códigos é necessário a instalação de todas as bibliotecas: <br/>
+<pre>
+1.1 Para compilar os códigos é necessário a instalação de todas as bibliotecas: <br/>
         stdio.h (Client.c) <br/>
         stdlib.h (Client.c) <br/>
         string.h (Client.c) <br/>
@@ -27,14 +28,16 @@ Victor Daisuke Araki - 10309041
         unistd.h (Client.c) <br/>
         pthread.h (Client.c) <br/>
         pyqt5 (mainwindow.py) <br/>
-      1.2 No caso de uso do Linux, o compilador de C/C++ já possui as bibliotecas necessárias para o "Client.c"; <br/>
-      1.3 No caso de uso do Linux, para se compilar o arquivo em C/C++ usar a linha: "gcc -Wall Client.c -pthread -o Client"; <br/>
-      1.4 Para o download da biblioteca referente a Python, usar o comando "pip install pyqt5"; <br/>
+ 1.2 No caso de uso do Linux, o compilador de C/C++ já possui as bibliotecas necessárias para o "Client.c"; <br/>
+ 1.3 No caso de uso do Linux, para se compilar o arquivo em C/C++ usar a linha: "gcc -Wall Client.c -pthread -o Client";
+ 1.4 Para o download da biblioteca referente a Python, usar o comando "pip install pyqt5"; <br/>
   <br/>
 </pre>  
 <h1> 2. PROJETO </h1>
-  2.1 
+<pre>
+  2.1 Inicialmente foi usado 
   
+</pre>  
 <h1> 3. SIMULAÇÕES </h1>  <br/>
 
   3.1 Interface;   <br/>
