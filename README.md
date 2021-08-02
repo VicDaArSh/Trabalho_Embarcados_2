@@ -14,7 +14,7 @@ Victor Daisuke Araki - 10309041
 <br/>
   
 
-<h1> 1. PRÉ-PROJETO </h1> <br/>
+<h1> 1. CONSIDERAÇÕES INICIAIS </h1> <br/>
     1.1 Para compilar os códigos é necessário a instalação de todas as bibliotecas: <br/>
       stdio.h (Client.c) <br/>
       stdlib.h (Client.c) <br/>
