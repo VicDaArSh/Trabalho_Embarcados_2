@@ -85,7 +85,7 @@ Victor Daisuke Araki - 10309041
   <figure>
       <p align="center"><img src="Imagens/embarcado_simples.jpeg"
         height="400"
-        <figcaption> <p align="center"> Figura 4. - Resultado do teste em sistema embarcado de código modelo </figcaption>
+        <figcaption> <p align="center"> Figura 4.4 - Resultado do teste em sistema embarcado de código modelo </figcaption>
   </figure>
   
   Para tal implementação, gravou-se o vídeo "TesteComThreadSimples.mp4", contido na pasta "Vídeos". Agora, tal transferência também se deu com nosso código de CLIENTE.
