@@ -57,7 +57,7 @@ Victor Daisuke Araki - 10309041
   <figure>
       <p align="center"><img src="Imagens/teste_servidor_interface_inicial.jpeg"
         height="400"
-        <figcaption> <p align="center"> Figura 3.1 - Interface do Servidor (menu principal de definição) </figcaption>
+        <figcaption> <p align="center"> Figura 4.1 - Interface do Servidor (menu principal de definição) </figcaption>
   </figure>
     
   Esse menu serve para definir as conexões, como: o IP da máquina que será o host, a porta dentro da qual será usada para o envio de mensagem e aquela para recebimento de mensagens. Dessa forma o codigo pode ser usado em diferentes máquinas.
@@ -65,7 +65,7 @@ Victor Daisuke Araki - 10309041
   <figure>
       <p align="center"><img src="Imagens/teste_servidor_interface_posterior.jpeg"
         height="400"
-        <figcaption> <p align="center"> Figura 3.2 - Interface do Servidor (monitorando mensagens) </figcaption>
+        <figcaption> <p align="center"> Figura 4.2 - Interface do Servidor (monitorando mensagens) </figcaption>
   </figure>
     
   Esse visor apresenta o menu de usuário para envio das mensagens do robô.
@@ -76,7 +76,7 @@ Victor Daisuke Araki - 10309041
   <figure>
       <p align="center"><img src="Imagens/teste_cliente.jpeg"
         height="400"
-        <figcaption> <p align="center"> Figura 3.3 - Prompt do CLIENTE em Windows </figcaption>
+        <figcaption> <p align="center"> Figura 4.3 - Prompt do CLIENTE em Windows </figcaption>
   </figure>
 
   <p> 4.3 Em sistema embarcado (VIOLA);  <br/>
@@ -85,7 +85,7 @@ Victor Daisuke Araki - 10309041
   <figure>
       <p align="center"><img src="Imagens/embarcado_simples.jpeg"
         height="400"
-        <figcaption> <p align="center"> Figura 3.4 - Resultado do teste em sistema embarcado de código modelo </figcaption>
+        <figcaption> <p align="center"> Figura 4. - Resultado do teste em sistema embarcado de código modelo </figcaption>
   </figure>
   
   Para tal implementação, gravou-se o vídeo "TesteComThreadSimples.mp4", contido na pasta "Vídeos". Agora, tal transferência também se deu com nosso código de CLIENTE.
@@ -93,7 +93,7 @@ Victor Daisuke Araki - 10309041
   <figure>
       <p align="center"><img src="Imagens/embarcado_multithread.jpeg"
         height="400"
-        <figcaption> <p align="center"> Figura 3.5 - Resultado do teste em sistema embarcado de nosso código Multithread </figcaption>
+        <figcaption> <p align="center"> Figura 4.5 - Resultado do teste em sistema embarcado de nosso código Multithread </figcaption>
   </figure>
   
   Para tal implementação, gravou-se o vídeo "MultiThread.mp4", contido na pasta "Vídeos".
